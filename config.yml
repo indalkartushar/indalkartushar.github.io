@@ -1,0 +1,133 @@
+baseURL: "https://indalkartushar.github.io/"
+title: Tushar Indalkar
+paginate: 5
+theme: PaperMod
+
+#enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+googleAnalytics: UA-123-45
+
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        title: Tushar Indalkar
+#        profileMode:
+#            enabled: false
+#            title: Tushar
+#            # imageUrl: "#"
+#            # imageTitle: my image
+#            # imageWidth: 120
+#            # imageHeight: 120
+#            buttons:
+#                - name: Blog
+#                  url: posts
+#                - name: Tags
+#                  url: tags
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Tushar Indalkar
+    description: "Tushar's Blog"
+    keywords: [Blog]
+    author: Tushar Indalkar
+    defaultTheme: auto # dark, light
+    DateFormat: "January 2, 2006"
+    #images: ["<link or path of image for opengraph, twitter-cards>"]
+    disableThemeToggle: false
+    ShowShareButtons: false
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+    ShowToc: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Tushar's Blog"
+        icon: /logo.png
+        iconHeight: 40
+
+    homeInfoParams:
+        Title: "Tushar Indalkar"
+        Content: >
+            Computer Engineer having interests in *Infrastructure Engineering*, *Site Reliability Engineering*, *Distributed systems*, *Multi Cloud*, *Testing*, *nix based Systems and Open Source Enthusiast.
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/Tushar-pawar"
+        - name: twitter
+          url: "https://twitter.com/Tusharpwr"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/Tushar-pawar/"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/Tushar-pawar/Tushar-pawar.github.io/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+menu:
+    main:
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 10
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 20
+        - identifier: Archive
+          name: archives
+          url: /archives/
+          weight: 30
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 40

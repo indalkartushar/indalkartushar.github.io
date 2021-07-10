@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://indalkartushar.github.io/sitemap.xml
